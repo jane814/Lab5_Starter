@@ -11,7 +11,8 @@ function init() {
     audio_set.src = `./assets/audio/${event.target.value}.mp3`;
     changed.src = `./assets/images/${event.target.value}.svg`;
   });
+  var sound = document.querySelector("audio");
   pressed.addEventListener('click',(event) => {
-    audio_set.src.play();
+    sound.play();
   });
 }
