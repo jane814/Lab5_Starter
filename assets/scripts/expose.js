@@ -17,7 +17,7 @@ function init() {
   pressed.addEventListener('click',(event) => {
     audio_set.play();
   });
-  level.addEventListener('input',(event) => {
+  level.addEventListener('change',(event) => {
     if(event.target.value ==0){
       audio_set.volume = 0.0;
       loud.src = "./assets/icons/volume-level-0.svg";
