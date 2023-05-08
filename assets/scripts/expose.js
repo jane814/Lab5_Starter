@@ -10,7 +10,7 @@ function init() {
     audio_set.src = `./assets/audio/${event.target.value}.mp3`;
     changed.src = `./assets/images/${event.target.value}.svg`;
   });
-  audio_set.addEventListener('click',() => {
+  audio_set.addEventListener('click',(event) => {
     audio.play();
   });
 }
