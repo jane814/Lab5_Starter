@@ -10,11 +10,17 @@ function init() {
   var level = document.getElementById("volume");
   var images = document.querySelectorAll("img");
   var loud = images[1];
+  var type = "horn";
   selected.addEventListener('change', (event) => {
     audio_set.src = `./assets/audio/${event.target.value}.mp3`;
     changed.src = `./assets/images/${event.target.value}.svg`;
+    type = event.target.value;
   });
   pressed.addEventListener('click',(event) => {
+    if(type == "party-horn"){
+      const jsConfetti = new JSConfetti();
+      jsConfetti.addConfetti();
+    }
     audio_set.play();
   });
   level.addEventListener('change',(event) => {
