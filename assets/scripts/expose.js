@@ -23,11 +23,11 @@ function init() {
       audio_set.volume = 0.0;
       loud.src = "./assets/icons/volume-level-0.svg";
     }
-    else if(1 <= num <33){
+    else if(1 <= num && num<33){
       audio_set.volume = 0.33;
       loud.src = "./assets/icons/volume-level-1.svg";
     }
-    else if(33 <= num <67){
+    else if(33 <= num && num<67){
       audio_set.volume = 0.66;
       loud.src = "./assets/icons/volume-level-2.svg";
     }
