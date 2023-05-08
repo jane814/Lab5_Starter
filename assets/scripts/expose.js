@@ -12,6 +12,6 @@ function init() {
     changed.src = `./assets/images/${event.target.value}.svg`;
   });
   pressed.addEventListener('click',(event) => {
-    audio.play();
+    audio_set.src.play();
   });
 }
