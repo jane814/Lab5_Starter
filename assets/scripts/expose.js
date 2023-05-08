@@ -18,15 +18,16 @@ function init() {
     audio_set.play();
   });
   level.addEventListener('change',(event) => {
-    if(event.target.value ==0){
+    var num = Number(event.target.value);
+    if(num ==0){
       audio_set.volume = 0.0;
       loud.src = "./assets/icons/volume-level-0.svg";
     }
-    else if(1 <= event.target.value <33){
+    else if(1 <= num <33){
       audio_set.volume = 0.33;
       loud.src = "./assets/icons/volume-level-1.svg";
     }
-    else if(33 <= event.target.value <67){
+    else if(33 <= num <67){
       audio_set.volume = 0.66;
       loud.src = "./assets/icons/volume-level-2.svg";
     }
